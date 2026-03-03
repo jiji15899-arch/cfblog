@@ -1,0 +1,23 @@
+name = "cf-blog"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cf-blog-db"
+database_id = "YOUR_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "YOUR_KV_NAMESPACE_ID"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "YOUR_CACHE_KV_NAMESPACE_ID"
+
+[vars]
+ADMIN_USERNAME = "jiwunin"
+# 비밀번호는 wrangler secret put ADMIN_PASSWORD 으로 설정하세요
+# wrangler secret put ADMIN_PASSWORD → Swsh120327!

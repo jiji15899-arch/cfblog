@@ -1,0 +1,796 @@
+/*
+ Theme Name:   Adsensefarm Skin
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      1.0
+*/
+
+
+/* 블로그 */
+.single .entry-content h2 {
+    margin: 20px -5px 15px;
+    font-size: 22px;
+    font-weight: 700;
+    COLOR: #333333;
+    PADDING-BOTTOM: 10px;
+    TEXT-ALIGN: left;
+    BORDER-LEFT: #333333 10px solid;
+    padding: 15px;
+    BACKGROUND-COLOR: #fafafa;
+    BORDER-BOTTOM: 2px solid #333333;
+}
+
+.single .entry-content h3 {
+	margin: 18px -5px 12px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #444;
+	padding: 12px;
+	text-align: left;
+	border-left: #555 6px solid;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+}
+
+.single .entry-content h4 {
+	margin: 16px -5px 10px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #555;
+	padding-left: 10px;
+	border-left: #777 4px solid;
+}
+
+.single .entry-content h5 {
+	margin: 14px -5px 8px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #666;
+	padding-left: 8px;
+	border-left: #aaa 2px solid;
+	font-style: italic;
+}
+
+
+
+.single .entry-content p {
+    margin-bottom: 25px;
+}
+
+.single .entry-content .wp-block-image {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px; /* 적당한 여백, 필요시 조정 가능 */
+}
+
+/* 헤더 아래 테두리 */
+
+.single .entry-header .entry-meta {
+border-bottom: 1px solid #f2f2f6;
+padding-bottom: 20px;
+}
+
+/* 포스트 내비게이션 */
+
+/* 포스트 내비게이션 */
+
+.single #nav-below {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #343a40;
+	border-top: 1px solid #495057;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 20px;
+}
+
+.single .nav-previous, .single .nav-next {
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+.single .nav-previous {
+	justify-content: flex-end;
+	margin-left: 10px;
+	order: 2;
+}
+
+.single .nav-next {
+	justify-content: flex-start;
+	margin-right: 10px;
+	order: 1;
+}
+
+.single .post-navigation .gp-icon {
+	display: none;
+}
+
+.single .nav-previous::after, .single .nav-next::before {
+	content: '';
+	flex-shrink: 0;
+}
+
+.single .nav-previous::after {
+	content: '》';
+	margin-left: 10px;
+}
+
+.single .nav-next::before {
+	content: '《';
+	margin-right: 10px;
+}
+
+.single .prev a, .single .next a {
+    color: #d6d6d6 !important;
+    text-decoration: none;
+    font-weight: 500 !important;
+    transition: color 0.3s, transform 0.3s, background 0.3s;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, .1);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.single .prev a:hover, .single .next a:hover {
+	text-decoration: none;
+	color: white !important;
+	background: rgba(255, 255, 255, 0.2);
+	transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+	.single #nav-below {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.single .nav-previous, .single .nav-next {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	
+	.single .nav-previous {
+		justify-content: flex-end;
+		order: 2;
+	}
+	
+	.single .nav-next {
+		justify-content: flex-start;
+		order: 1;
+	}
+}
+
+
+
+
+/* 링크 스타일 */
+.single .entry-content a:not(.wp-element-button):not(.ez-toc-btn):not(.ez-toc-link):not(.gb-button) {
+background-image: linear-gradient(to right, rgb(169, 188, 245), rgb(46, 100, 254)) !important;
+    background-position: 0px 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 0.15em !important;
+    box-sizing: inherit !important;
+    color: #3e5898 !important;
+    font-family: "Gowun Dodum", sans-serif !important;
+    font-size: 16px !important;
+    padding: 1px 0px !important;
+    text-decoration-line: none !important;
+    transition: all 0.3s ease !important;
+    user-select: auto !important;
+    word-break: break-all !important;
+    position: relative !important;
+    display: inline !important;
+    width: auto !important;
+    margin: initial !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    animation: none !important;
+    box-shadow: none !important;
+    white-space: normal !important;
+    }
+    
+.single .entry-content a:not(.wp-element-button):not(.ez-toc-btn):not(.ez-toc-link):not(.wp-block-image a):not(.gb-button):hover {
+        background-size: 100% 100% !important;
+    color: white !important;
+    background-image: linear-gradient(to right, rgb(46, 100, 254), rgb(116, 159, 251)) !important;
+    border-radius: 3px !important;
+    padding: 2px 5px !important;
+    }
+
+/* 함께 보면 좋은 글 */
+/* 관련 글 스타일링 */
+.related-articles {
+	background-color: #f8f9fa;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	border-left: 4px solid #3e5898;
+	position: relative;
+	list-style: none;
+	margin: 20px 0px 20px;
+}
+
+.related-articles::before {
+	content: '✅ 함께 보면 좋은 글';
+	display: block;
+	font-weight: bold;
+	font-size: 17px;
+	margin-bottom: 10px;
+	color: #1c1c1c;
+}
+
+.related-articles li {
+	margin-bottom: 6px;
+	line-height: 1.7;
+}
+
+.related-articles li::before {
+	content: '👉';
+	display: inline-block;
+	margin-right: 6px;
+	font-size: 16px;
+}
+
+.related-articles a {
+	background-image: linear-gradient(to right, rgb(169, 188, 245), rgb(46, 100, 254)) !important;
+	background-position: 0px 100% !important;
+	background-repeat: no-repeat !important;
+	background-size: 100% 0.15em !important;
+	box-sizing: inherit !important;
+	color: #3e5898 !important;
+	font-family: "Gowun Dodum", sans-serif !important;
+	font-size: 16px !important;
+	padding: 1px 0px !important;
+	text-decoration-line: none !important;
+	transition: all 0.3s ease !important;
+	user-select: auto !important;
+	word-break: break-word !important;
+	position: relative !important;
+	display: inline !important;
+	width: auto !important;
+	margin: initial !important;
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	animation: none !important;
+	box-shadow: none !important;
+	white-space: normal !important;
+}
+
+.related-articles a:hover {
+	background-size: 100% 100% !important;
+	color: white !important;
+	background-image: linear-gradient(to right, rgb(46, 100, 254), rgb(116, 159, 251)) !important;
+	border-radius: 3px !important;
+	padding: 2px 5px !important;
+}
+
+
+
+/* 전면, 아카이브 */
+
+.home h2.entry-title,
+.archive h2.entry-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3em
+}
+
+/* 홈 썸네일 */
+.home .post-image, 
+.archive .post-image {
+    overflow: hidden; /* 이미지 확대 시 컨테이너 넘침 방지 */
+    display: block;
+    position: relative;
+        box-shadow: 0 3px 12px -1px rgba(7, 10, 25, 0.2), 0 22px 27px -20px rgba(7, 10, 25, 0.2);
+}
+
+.home .post-image img, 
+.archive .post-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.home .post-image:hover img,
+.archive .post-image:hover img {
+    transform: scale(1.05); /* 이미지 확대 */
+}
+
+/* 사이트 전체 */
+
+.site-content {
+margin-top: 40px;
+}
+
+
+.single.separate-containers .inside-article,
+.page-template-default.separate-containers .inside-article {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+.home.separate-containers article:first-of-type .inside-article,
+.archive.separate-containers article:first-of-type .inside-article {
+	border-top-left-radius: 7px;
+}
+
+.home.separate-containers article:nth-of-type(3) .inside-article,
+.archive.separate-containers article:nth-of-type(3) .inside-article {
+	border-top-right-radius: 7px;
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.home.separate-containers article:first-of-type .inside-article,
+	.archive.separate-containers article:first-of-type .inside-article {
+		border-top-left-radius: 7px;
+	}
+
+	.home.separate-containers article:nth-of-type(2) .inside-article,
+	.archive.separate-containers article:nth-of-type(2) .inside-article {
+		border-top-right-radius: 7px;
+	}
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+.home.separate-containers article:first-of-type .inside-article,
+.archive.separate-containers article:first-of-type .inside-article {
+	border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+}
+}
+
+
+@media (max-width: 920px) {
+
+
+    .container .site-content .content-area {
+        padding: 0 10px;
+    }
+}
+
+/* 푸터 */
+.copyright-bar {
+    text-align: left;
+}
+
+.copyright-bar h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+.site-footer.grid-container {
+    padding: 0 10px;
+}
+}
+
+/* 메뉴 */
+
+/* 페이지네이션 */
+/* Styling for modern pagination in the GeneratePress WordPress theme */
+
+/* Common Styles */
+nav#nav-below.paging-navigation .page-numbers {
+    display: inline-block;
+    padding: 5px 10px;  /* Increased padding for a more clickable area */
+    margin-right: 8px;  /* Slightly reduced margin */
+    border: 1px solid #e0e0e0;  /* Subtle border */
+    border-radius: 3px;  /* Small border radius for rounded edges */
+    font-size: 14px;  /* Reduce font size for a sleeker look */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;  /* Smoother transitions */
+    text-decoration: none;
+    background-color: #f5f5f5;  /* Neutral background */
+}
+
+/* Current Page Styles */
+nav#nav-below.paging-navigation span.page-numbers.current {
+    font-weight: 600;  /* Slightly reduced weight for modern feel */
+    background: #1e72bd;
+    color: #fff;
+    border-color: #1e72bd;
+}
+
+/* Link Styles */
+nav#nav-below.paging-navigation a.page-numbers {
+    color: #555;  /* Dark gray for better readability */
+}
+
+/* Hover and Focus Styles for Interactivity */
+nav#nav-below.paging-navigation a.page-numbers:hover,
+nav#nav-below.paging-navigation a.page-numbers:focus {
+    background: #1e72bd;
+    color: #fff;
+    border-color: #1e72bd;
+}
+
+/* Container Padding for Separate Containers */
+.separate-containers .paging-navigation {
+    padding: 20px 0;
+    text-align: center;  /* Center-aligns the pagination for a more balanced look */
+}
+
+/* Icon Adjustment for Better Alignment */
+nav#nav-below.paging-navigation .gp-icon {
+    vertical-align: middle;  /* Aligns the icon with the text */
+}
+
+
+/* 버튼 스타일 */
+.wp-block-buttons {
+    margin-bottom: 15px;
+}
+/* 버튼 스타일 */
+.blueBtn.wp-block-buttons > .wp-block-button,
+.greenBtn.wp-block-buttons > .wp-block-button,
+.redBtn.wp-block-buttons > .wp-block-button,
+.orangeBtn.wp-block-buttons > .wp-block-button,
+.purpleBtn.wp-block-buttons > .wp-block-button,
+.tealBtn.wp-block-buttons > .wp-block-button,
+.pinkBtn.wp-block-buttons > .wp-block-button,
+.yellowBtn.wp-block-buttons > .wp-block-button,
+.cyanBtn.wp-block-buttons > .wp-block-button,
+.emeraldBtn.wp-block-buttons > .wp-block-button,
+.indigoBtn.wp-block-buttons > .wp-block-button {
+    width: 85% !important;
+    margin: 0 auto !important;
+}
+
+.blueBtn .wp-block-button__link,
+.greenBtn .wp-block-button__link,
+.redBtn .wp-block-button__link,
+.orangeBtn .wp-block-button__link,
+.purpleBtn .wp-block-button__link,
+.tealBtn .wp-block-button__link,
+.pinkBtn .wp-block-button__link,
+.yellowBtn .wp-block-button__link,
+.cyanBtn .wp-block-button__link,
+.emeraldBtn .wp-block-button__link,
+.indigoBtn .wp-block-button__link {
+    display: block !important;
+    padding: 18px 30px !important;
+   /* font-size: 18px !important; */
+    text-align: center !important;
+    text-decoration: none !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    white-space: nowrap !important;
+    cursor: pointer !important;
+    transition: all 0.4s ease !important;
+    animation: pulse 2s infinite !important;
+    box-sizing: border-box !important;
+}
+
+/* 개별 버튼 색상 */
+.blueBtn .wp-block-button__link {
+    background-color: #0059a6 !important;
+    box-shadow: 0 0 20px rgba(17, 75, 134, 0.5) !important;
+}
+.blueBtn .wp-block-button__link:hover {
+    background-color: #003f7f !important;
+    box-shadow: 0 0 25px rgba(0, 84, 164, 0.7) !important;
+}
+
+.greenBtn .wp-block-button__link {
+    background-color: #037631 !important;
+    box-shadow: 0 0 20px rgba(0, 178, 47, 0.5) !important;
+}
+.greenBtn .wp-block-button__link:hover {
+    background-color: #025a27 !important;
+    box-shadow: 0 0 25px rgba(0, 178, 47, 0.7) !important;
+}
+
+.redBtn .wp-block-button__link {
+    background-color: #ce1300 !important;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5) !important;
+}
+.redBtn .wp-block-button__link:hover {
+    background-color: #a81000 !important;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7) !important;
+}
+
+.orangeBtn .wp-block-button__link {
+    background-color: #f28c38 !important;
+    box-shadow: 0 0 20px rgba(242, 140, 56, 0.5) !important;
+}
+.orangeBtn .wp-block-button__link:hover {
+    background-color: #d97420 !important;
+    box-shadow: 0 0 25px rgba(242, 140, 56, 0.7) !important;
+}
+
+.purpleBtn .wp-block-button__link {
+    background-color: #6a1b9a !important;
+    box-shadow: 0 0 20px rgba(106, 27, 154, 0.5) !important;
+}
+.purpleBtn .wp-block-button__link:hover {
+    background-color: #4e1380 !important;
+    box-shadow: 0 0 25px rgba(106, 27, 154, 0.7) !important;
+}
+
+.tealBtn .wp-block-button__link {
+    background-color: #00897b !important;
+    box-shadow: 0 0 20px rgba(0, 137, 123, 0.5) !important;
+}
+.tealBtn .wp-block-button__link:hover {
+    background-color: #00695c !important;
+    box-shadow: 0 0 25px rgba(0, 137, 123, 0.7) !important;
+}
+
+.pinkBtn .wp-block-button__link {
+    background-color: #e91e63 !important;
+    box-shadow: 0 0 20px rgba(233, 30, 99, 0.5) !important;
+}
+.pinkBtn .wp-block-button__link:hover {
+    background-color: #c2185b !important;
+    box-shadow: 0 0 25px rgba(233, 30, 99, 0.7) !important;
+}
+
+.yellowBtn .wp-block-button__link {
+    background-color: #fbc02d !important;
+    box-shadow: 0 0 20px rgba(251, 192, 45, 0.5) !important;
+}
+.yellowBtn .wp-block-button__link:hover {
+    background-color: #e8a900 !important;
+    box-shadow: 0 0 25px rgba(251, 192, 45, 0.7) !important;
+}
+
+.cyanBtn .wp-block-button__link {
+    background-color: #00bcd4 !important;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.5) !important;
+}
+.cyanBtn .wp-block-button__link:hover {
+    background-color: #0097a7 !important;
+    box-shadow: 0 0 25px rgba(0, 188, 212, 0.7) !important;
+}
+
+.emeraldBtn .wp-block-button__link {
+    background-color: #2ecc71 !important;
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.5) !important;
+}
+.emeraldBtn .wp-block-button__link:hover {
+    background-color: #25a25a !important;
+    box-shadow: 0 0 25px rgba(46, 204, 113, 0.7) !important;
+}
+
+.indigoBtn .wp-block-button__link {
+    background-color: #3f51b5 !important;
+    box-shadow: 0 0 20px rgba(63, 81, 181, 0.5) !important;
+}
+.indigoBtn .wp-block-button__link:hover {
+    background-color: #2e3b8e !important;
+    box-shadow: 0 0 25px rgba(63, 81, 181, 0.7) !important;
+}
+
+/* 호버 공통 스타일 */
+.blueBtn .wp-block-button__link:hover,
+.greenBtn .wp-block-button__link:hover,
+.redBtn .wp-block-button__link:hover,
+.orangeBtn .wp-block-button__link:hover,
+.purpleBtn .wp-block-button__link:hover,
+.tealBtn .wp-block-button__link:hover,
+.pinkBtn .wp-block-button__link:hover,
+.yellowBtn .wp-block-button__link:hover,
+.cyanBtn .wp-block-button__link:hover,
+.emeraldBtn .wp-block-button__link:hover,
+.indigoBtn .wp-block-button__link:hover {
+    transform: scale(1.03);
+    color: #fff !important;
+}
+
+/* 펄스 애니메이션 */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+/* author box */
+
+.saboxplugin-wrap {
+    margin-top: 20px !important;
+}
+
+.saboxplugin-wrap .saboxplugin-gravatar img {
+    border-radius: 50% !important;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+
+/* read more 버튼 */
+
+/* 스타일 핵심 정의 */
+a.read-more {
+    float: right;
+    overflow: hidden;
+    position: relative;
+    height: 28px;
+    background-color: #fdfdff;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 28px;
+    padding: 0 13px;
+   margin: 10px 0 20px;
+    border: 1px solid #f2f2f6;
+    border-radius: 3px;
+    transition: all 0.17s ease;
+    text-decoration: none;
+}
+
+/* hover 시 색상 반전 */
+a.read-more:hover {
+    color: #ffffff;
+    background-color: #0073aa; /* WordPress 기본 파랑 */
+    border-color: #0073aa;
+}
+
+/* 아이콘 대체 (→) */
+a.read-more::before {
+    content: '→';
+    margin-right: 5px;
+    position: relative;
+    top: 0;
+}
+
+/* 인용구 */
+/* WordPress blockquote 스타일 */
+.wp-block-quote {
+  position: relative;
+  background: #f9f9f9;
+  border-left: 10px solid #ff4848;
+  margin: 1.5em 10px;
+  padding: 1.2em 30px 1.2em 75px;
+  quotes: "“" "”" "‘" "’";
+  text-align: left;
+  font-style: normal;
+  font-size: 0.99em;
+  border-radius: 3px;
+  color: #000;
+}
+
+/* 인용 부호 */
+.wp-block-quote::before {
+  font-family: Arial, sans-serif;
+  content: open-quote;
+  color: #ff4848;
+  font-size: 4em;
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  line-height: 1;
+  opacity: 0.2;
+}
+
+/* 닫는 따옴표 제거 */
+.wp-block-quote::after {
+  content: '';
+}
+
+/* 여러 문단 대응 */
+.wp-block-quote p:not(:first-child) {
+  display: inline-block;
+  line-height: 1.65em;
+  margin-bottom: 21px;
+}
+
+/* 첫/마지막 문단 스타일 */
+.wp-block-quote p:first-child,
+.wp-block-quote p:last-child {
+  display: inline;
+  line-height: 1.1em;
+}
+
+/* 인용 출처 */
+.wp-block-quote cite {
+  padding-top: 20px;
+  display: block;
+  font-style: italic;
+  font-size: 15px;
+  color: #777;
+}
+
+/* 댓글 */
+
+@media (min-width: 769px) {
+    .comment-form #author,
+    .comment-form #email {
+        float: left;
+        width: 48%;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+    }
+
+    .comment-form #author {
+        margin-right: 4%;
+    }
+
+    .comment-form #url {
+        clear: both;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+    }
+}
+
+#reply-title {
+display: none;
+}
+
+
+h3.comments-title {
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #222;
+    font-weight: 600;
+}
+
+h3.comments-title span {
+    line-height: 17px;
+    display: inline-block;
+    padding: 7px 12px 4px;
+    background-color: #222;
+    color: #fff;
+        font-size: 0.7em;
+}
+
+/* 아카이브 */
+
+.archive header.page-header {
+    background-color: transparent;
+}
+
+/* 관련 글 */
+	.wp-show-posts-columns .wp-show-posts-inner {
+		margin: 0 0 0 2em;
+	}
+
+	article.wp-show-posts-single {
+		margin-bottom: 20px !important;
+	}
+
+	.wp-show-posts-inner {
+		border: 1px solid #ddd;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+		background-color: #fff;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.wp-show-posts-entry-header {
+		padding-right: 3px;
+		padding-left: 3px;
+	}
+
+/* hover animation */
+.wp-show-posts-image img {
+    transition: transform 0.3s ease;
+}
+
+.wp-show-posts-image img:hover {
+    transform: scale(1.05);
+}

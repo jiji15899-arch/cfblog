@@ -1,0 +1,14 @@
+{
+  "name": "cf-blog",
+  "version": "1.0.0",
+  "description": "Cloudflare Pages Blog CMS - GeneratePress Style",
+  "scripts": {
+    "dev": "wrangler pages dev public --d1 DB --kv SESSIONS --kv CACHE",
+    "deploy": "wrangler pages deploy public",
+    "db:init": "wrangler d1 execute cf-blog-db --file=./migrations/0001_init.sql",
+    "db:init:remote": "wrangler d1 execute cf-blog-db --remote --file=./migrations/0001_init.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
